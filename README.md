@@ -5,7 +5,7 @@
 When using this plugin，‘Pageable’  can be passed as parameter。
 If ‘limit’ was not exists in the SQL ，it would be add the end of the SQL statement automatically
 
-## UseAge
+## Useage
 
 1. Download the code and deploy the packege to your local repository
 2. Add the dependency to pom.xml
