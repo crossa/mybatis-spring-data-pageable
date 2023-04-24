@@ -39,8 +39,6 @@ public class MybatisSpringDataPageableInterceptor implements Interceptor {
                 Map<String, Object> params = (Map<String, Object>) parameter;
                 Pageable pageable = searchPageable(params);
                 sql += " limit " + (pageable.getOffset()) + "," + pageable.getPageSize();
-            } else {
-                sql += " limit 1";
             }
             metaObject.setValue(BOUND_SQL, sql);
         }
